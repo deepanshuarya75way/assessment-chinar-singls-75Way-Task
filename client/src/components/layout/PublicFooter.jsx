@@ -35,7 +35,7 @@ export default function PublicFooter() {
                 <SchoolIcon sx={{ color: '#F2B705', fontSize: 24 }} />
               </Box>
               <Typography variant="h6" sx={{ fontFamily: '"Fredoka", "Nunito", sans-serif', fontWeight: 800, color: '#fff', fontSize: '1.4rem' }}>
-                Study<span style={{ color: '#F2B705' }}>Stairs</span>
+                Demo<span style={{ color: '#F2B705' }}>Project</span>
               </Typography>
             </Box>
             <Typography variant="body2" sx={{ color: '#94A3B8', lineHeight: 1.8, mb: 3, maxWidth: 360, fontSize: '0.92rem', fontFamily: '"Nunito", sans-serif' }}>

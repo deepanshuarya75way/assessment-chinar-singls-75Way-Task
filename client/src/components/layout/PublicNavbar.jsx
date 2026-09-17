@@ -52,7 +52,7 @@ export default function PublicNavbar() {
                 fontFamily: '"Fredoka", "Nunito", sans-serif', fontWeight: 800,
                 color: mode === 'dark' ? '#ffffff' : 'primary.main', letterSpacing: 0, fontSize: '1.35rem',
               }}>
-                Study<span style={{ color: '#F2B705' }}>Stairs</span>
+                Demo<span style={{ color: '#F2B705' }}>Project</span>
               </Typography>
             </Box>
 

@@ -221,7 +221,7 @@ export default function LoginPage() {
               <SchoolIcon sx={{ color: '#fff', fontSize: 28 }} />
             </Box>
             <Typography variant="h5" sx={{ fontFamily: '"Poppins",sans-serif', fontWeight: 700 }}>
-              Study<span style={{ color: '#F2B705' }}>Stairs</span>
+              Demo<span style={{ color: '#F2B705' }}>Project</span>
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
               {mode === 'login' ? 'Sign in to your account' : 'Create a new account'}
