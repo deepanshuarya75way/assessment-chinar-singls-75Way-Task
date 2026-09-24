@@ -86,12 +86,17 @@ export const requestsAPI = {
   getMyRequests: () => request('GET', '/requests/my'),
 };
 
+
 // ── TEACHERS ─────────────────────────────────────────────────
 export const teachersAPI = {
   apply: (data) => request('POST', '/teachers/apply', data, true),
   getAll: (params = {}) => {
     const qs = new URLSearchParams(params).toString();
     return request('GET', `/teachers${qs ? '?' + qs : ''}`);
+  },
+  fetchAll: (params = {}) => {
+    const qs = new URLSearchParams(params).toString();
+    return request('GET', `/teachers/fetch${qs ? '?' + qs : ''}`);
   },
   getOne: (id) => request('GET', `/teachers/${id}`),
   approve: (id) => request('PATCH', `/teachers/${id}/approve`),

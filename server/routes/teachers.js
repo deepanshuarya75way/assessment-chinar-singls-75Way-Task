@@ -2,7 +2,7 @@ const router = require('express').Router();
 const {
   applyAsTeacher, getAllTeachers, getTeacher,
   approveTeacher, rejectTeacher, getMyProfile, updateMyProfile, getStats,
-  getTeacherApplications, getTeacherApplicationById
+  getTeacherApplications, getTeacherApplicationById, fetchTeachers
 } = require('../controllers/teacherController');
 const { protect, authorize } = require('../middleware/auth');
 const upload = require('../middleware/upload');
@@ -13,6 +13,7 @@ router.post('/apply', upload.fields([
   { name: 'certificate', maxCount: 1 }
 ]), applyAsTeacher);
 router.get('/', getAllTeachers);
+router.get('/fetch', fetchTeachers);
 
 // Teacher
 router.get('/me/profile', protect, authorize('teacher'), getMyProfile);
